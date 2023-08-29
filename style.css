@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header section */
+.container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  height: 86px;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  background-color:wheat;
+}
+.logo svg {
+  height: 30px;
+  width: 84%;
+}
+.logo {
+  margin-inline: 20px;
+}
+.location .delivery-location {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+}
+.location .location-des {
+  font-size: 12px;
+}
+.fa-caret-down {
+  padding-left: 10px;
+}
+.location,
+.login,
+.cart {
+  padding: 0px 25px;
+}
+.searchbar input {
+  border: none;
+  outline: none;
+  width: 87%;
+  height: 30px;
+  background: rgb(248, 248, 248);
+}
+.fa-magnifying-glass {
+  margin-inline: 12px;
+  width: 3%;
+  color: black;
+}
+.searchbar {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 12px;
+  background: rgb(248, 248, 248);
+  color: rgb(130, 130, 130);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.login {
+  transform: translate(150px, 2px);
+}
+.cart {
+  transform: translate(160px, 4px);
+  width: 10%;
+  margin-bottom: 10px;
+}
+.cart button {
+  padding: 6px;
+  color: white;
+  background-color: #0c831f;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  height: 50px;
+}
+
+/* main section */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+.main-container {
+  max-width: 1280px;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+.banner2::-webkit-scrollbar {
+  display: none;
+}
+.banner2 {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  margin: 0px 20px;
+}
+.banner2 img {
+  width: 335px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.categories div>img{
+    width: 100%;
+}
+@media screen and (max-width:480px) {
+.categories {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categories div>img{
+    width: 100%;
+}
+    
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 34px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.category-name{
+        color: rgb(28, 28, 28);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.title a{
+    line-height: 32px;
+    font-size: 20px;
+    color: rgb(12, 131, 31);
+    text-decoration: none;
+}
+.content-list-items{
+    display: flex;
+    column-gap: 22px;
+    justify-content: space-between;
+}
+.item{
+    margin-top: 30px;
+    padding-inline: 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-bottom: 18px;
+    margin-top: 10px;
+}
+.items .item img{
+    width:100%;
+}
+.timer{
+    font-size: 10px;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.item-name{
+  margin-top: 13px;
+}
+.weight{
+  opacity: 0.7;
+  padding: 10px 0px;
+}
+.price>button{
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid green;
+  background-color: #f7fff9;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top:150px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+.fa-heart{
+  padding-inline: 4px;
+  color: red;
+}
